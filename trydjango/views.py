@@ -15,7 +15,7 @@ def home_view(request, *args, **kwargs):
     random_id = random.randint(1, 4) # pseudo random
     
     # from the database??
-    article_obj = Article.objects.get(id=random_id)
+    article_obj = Article.objects.get(id=1)
     article_queryset = Article.objects.all()
     context = {
         "object_list": article_queryset,
